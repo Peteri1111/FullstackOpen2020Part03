@@ -4,6 +4,10 @@
   "description": "Part03 of Fullstackopen2020",
   "main": "index.js",
   "scripts": {
+    "build:ui": "rm -rf build && cd ../puhelinluettelofrontend/ && npm run build --prod && cp -r build ../puhelinluettelobackend/",
+    "logs:prod": "heroku logs --tail",
+    "deploy": "git push heroku master",
+    "deploy:full": "npm run build:ui && git add . & git commit -m uibuild && git push && git run deploy",
     "dev": "nodemon index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +29,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
