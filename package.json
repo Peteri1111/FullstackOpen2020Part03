@@ -1,0 +1,29 @@
+{
+  "name": "part3",
+  "version": "1.0.0",
+  "description": "Part03 of Fullstackopen2020",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peteri1111/FullstackOpen2020Part03.git"
+  },
+  "author": "Peterii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peteri1111/FullstackOpen2020Part03/issues"
+  },
+  "homepage": "https://github.com/Peteri1111/FullstackOpen2020Part03#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
