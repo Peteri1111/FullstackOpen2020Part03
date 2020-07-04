@@ -1,7 +1,12 @@
 const express = require("express"),
   app = express(),
   morgan = require("morgan"),
-  cors = require("cors");
+  cors = require("cors"),
+  mongoose = require("mongoose");
+
+const url = `mongodb+srv://fullstack:${password}@cluster0.saygo.mongodb.net/persons-app?retryWrites=true&w=majority
+  `;
+
 app.use(express.json());
 app.use(cors());
 app.use(express.static("build"));
