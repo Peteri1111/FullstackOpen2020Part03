@@ -1,5 +1,6 @@
 const URL = process.env.MONGODB_URI,
   mongoose = require("mongoose");
+mongoose.set("useFindAndModify", false);
 console.log("connecting to", URL);
 mongoose
   .connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
