@@ -1,7 +1,7 @@
-POST http://localhost:3001/api/persons/
+POST https://puhelinluettelo-peterii.herokuapp.com/api/persons/
 Content-Type: application/json
 
 {
-    "numberid": "12321321",
-    "name": "Elv666is ngvbhdddasdsadEnteredbuilding"
+    "number": "12321111321",
+    "name": "Elv666isngvbhdddasdsadEnteredbuilding"
 }
